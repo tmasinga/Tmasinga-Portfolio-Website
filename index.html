@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tinyiko Masinga — Data Analyst & Portfolio</title>
+  <meta name="description" content="Tinyiko Masinga — Data Analyst. Financial dashboards, data visualization, KPI design, and product strategy." />
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="theme-color" content="#0F172A" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="brand" href="#home">Tinyiko Masinga</a>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">☰</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero" id="home" role="banner">
+      <img src="./assets/banner.svg" alt="Tinyiko Masinga banner" class="hero-banner" />
+      <div class="hero-content container">
+        <h1>Tinyiko Masinga</h1>
+        <p class="subtitle">Data Analyst • Financial Dashboards • Digital Marketing • Product Development</p>
+        <p class="lead">Turning raw data into insights. Building businesses through strategy, analytics & creativity.</p>
+        <div class="cta">
+          <a class="btn primary" href="#projects">View projects</a>
+          <a class="btn" href="#contact">Get in touch</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="about" class="section about">
+      <h2>About</h2>
+      <p>
+        I'm a Data Analyst skilled in Power BI, Excel, SQL & Python. I build financial dashboards, KPI systems, and data-driven strategies for product and marketing teams. I also run a cleaning-products business where I use dashboards, pricing models and market research to grow revenue and optimize inventory.
+      </p>
+
+      <div class="tools-grid">
+        <div class="tool">Power BI</div>
+        <div class="tool">Excel</div>
+        <div class="tool">SQL</div>
+        <div class="tool">Python</div>
+        <div class="tool">DAX & Power Query</div>
+        <div class="tool">Canva & Google Analytics</div>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects">
+      <h2>Featured Projects</h2>
+      <p class="muted">Click any card to open the repository or project page (replace placeholders with your real links).</p>
+
+      <div class="projects-grid" id="projects-grid">
+        <article class="card project">
+          <a href="https://github.com/tmasinga/project-one" target="_blank" rel="noopener">
+            <div class="project-thumb" style="background-image:url('https://via.placeholder.com/720x360?text=Project+1');"></div>
+            <div class="project-body">
+              <h3>Financial KPI Dashboard</h3>
+              <p>Power BI dashboard evaluating revenue, expenses and margins with interactive filtering and ratio analysis.</p>
+              <div class="tags"><span>Power BI</span><span>Financial Modeling</span></div>
+            </div>
+          </a>
+        </article>
+
+        <article class="card project">
+          <a href="https://github.com/tmasinga/project-two" target="_blank" rel="noopener">
+            <div class="project-thumb" style="background-image:url('https://via.placeholder.com/720x360?text=Project+2');"></div>
+            <div class="project-body">
+              <h3>Social Media Engagement Dashboard</h3>
+              <p>Tracks TikTok & Instagram engagement, growth trends and CTR to guide content strategy.</p>
+              <div class="tags"><span>Analytics</span><span>Marketing</span></div>
+            </div>
+          </a>
+        </article>
+
+        <article class="card project">
+          <a href="https://github.com/tmasinga/project-three" target="_blank" rel="noopener">
+            <div class="project-thumb" style="background-image:url('https://via.placeholder.com/720x360?text=Project+3');"></div>
+            <div class="project-body">
+              <h3>Cleaning Products Analytics</h3>
+              <p>Demand & inventory dashboard, costing calculator and market research report to scale operations.</p>
+              <div class="tags"><span>Inventory</span><span>Pricing</span></div>
+            </div>
+          </a>
+        </article>
+      </div>
+
+      <div class="projects-actions">
+        <a class="btn" href="https://github.com/tmasinga?tab=repositories" target="_blank" rel="noopener">See all repos</a>
+        <button id="show-more" class="btn">Load more (demo)</button>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <h2>Contact</h2>
+      <p>Interested in collaborating or partnering on a dashboard or analytics project? Reach out.</p>
+      <div class="contact-grid">
+        <div>
+          <h3>Email</h3>
+          <p><a href="mailto:tinyikomasinga20@outlook.com">tinyikomasinga20@outlook.com</a></p>
+        </div>
+        <div>
+          <h3>Socials</h3>
+          <p>
+            <a href="#" id="link-tiktok">TikTok</a> ·
+            <a href="#" id="link-instagram">Instagram</a> ·
+            <a href="#" id="link-linkedin">LinkedIn</a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Tinyiko Masinga — Built with ❤️ · <a href="https://github.com/tmasinga/tmasinga" target="_blank" rel="noopener">GitHub</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
