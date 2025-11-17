@@ -34,19 +34,54 @@ body{
 
 .nav-toggle{display:none;background:transparent;border:1px solid rgba(255,255,255,0.04);color:var(--text);padding:6px 10px;border-radius:8px}
 
-/* Hero 
-.hero{position:relative;background:transparent;padding-bottom:18px}
-.hero-banner{width:100%;height:auto;border-radius:12px;display:block;box-shadow: 0 10px 40px rgba(2,6,23,0.6);border:1px solid rgba(255,255,255,0.03)}
-.hero-content{position:absolute;left:60px;top:28%;transform:translateY(-20%);max-width:540px}
-.hero h1{margin:0;font-size:36px}
-.subtitle{margin:8px 0;color:var(--muted);font-weight:600}
-.lead{margin:12px 0;color:var(--text)}  */
+/* ---------------- Header ---------------- */
+.site-header {
+    position: sticky;   /* sticks at top */
+    top: 0;
+    z-index: 999;       /* stays above all content */
+    background: var(--bg);
+    padding-bottom: 10px;
+}
 
-/* Hero Section */
+/* Navigation */
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0;
+}
+
+.brand {
+    font-weight: 700;
+    color: var(--text);
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 12px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links a {
+    color: var(--muted);
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.nav-links a:hover {
+    color: var(--text);
+    background: rgba(255, 255, 255, 0.02);
+}
+
+/* ---------------- Hero Section ---------------- */
 .hero {
     position: relative;
     background: transparent;
-    padding-top: 120px; /* space for header */
+    padding-top: 120px;  /* space for sticky header */
     padding-bottom: 40px;
 }
 
@@ -62,7 +97,7 @@ body{
 .hero-content {
     position: absolute;
     left: 60px;
-    top: 50%; /* vertically center relative to banner */
+    top: 50%;               /* vertically center */
     transform: translateY(-50%);
     max-width: 540px;
 }
@@ -83,7 +118,16 @@ body{
     color: var(--text);
 }
 
-/* Responsive Adjustments */
+/* ---------------- Smooth Scrolling & Anchors ---------------- */
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin-top: 120px; /* avoid sticky header overlap */
+}
+
+/* ---------------- Responsive Adjustments ---------------- */
 @media (max-width: 900px) {
     .hero {
         padding-top: 80px; /* smaller space for mobile */
@@ -101,6 +145,32 @@ body{
         font-size: 28px;
     }
 }
+
+@media (max-width: 700px) {
+    .nav-links {
+        display: none;
+        position: absolute;
+        right: 16px;
+        top: 58px;
+        background: var(--panel);
+        padding: 8px;
+        border-radius: 8px;
+        flex-direction: column;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+}
+
+
+/* Hero 
+.hero{position:relative;background:transparent;padding-bottom:18px}
+.hero-banner{width:100%;height:auto;border-radius:12px;display:block;box-shadow: 0 10px 40px rgba(2,6,23,0.6);border:1px solid rgba(255,255,255,0.03)}
+.hero-content{position:absolute;left:60px;top:28%;transform:translateY(-20%);max-width:540px}
+.hero h1{margin:0;font-size:36px}
+.subtitle{margin:8px 0;color:var(--muted);font-weight:600}
+.lead{margin:12px 0;color:var(--text)}  */
 
 /* Buttons */
 .btn{display:inline-block;padding:10px 14px;border-radius:10px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:var(--text);text-decoration:none;cursor:pointer;transition:var(--transition)}
