@@ -19,18 +19,17 @@
 html, body{
     height:100%;
 }
+/* Push content down so hero starts below header */
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial;
+  background: linear-gradient(180deg, rgba(7,16,37,1) 0%, rgba(3,8,20,1) 100%);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
 
-body{
-    margin:0;
-    font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial;
-    background:linear-gradient(180deg, rgba(7,16,37,1) 0%, rgba(3,8,20,1) 100%);
-    color:var(--text);
-    -webkit-font-smoothing:antialiased;
-    -moz-osx-font-smoothing:grayscale;
-    line-height:1.5;
-
-    /* Offset for fixed header */
-    padding-top:72px; /* adjust if header height changes */
+  padding-top: 80px; /* must match header height */
 }
 
 .container{
@@ -49,20 +48,6 @@ body{
   align-items: center;
   padding: 0 20px;
 }
-
-/* Push content down so hero starts below header */
-body {
-  margin: 0;
-  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial;
-  background: linear-gradient(180deg, rgba(7,16,37,1) 0%, rgba(3,8,20,1) 100%);
-  color: var(--text);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1.5;
-
-  padding-top: 80px; /* must match header height */
-}
-
 
 .nav{
     display:flex;
