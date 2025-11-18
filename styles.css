@@ -28,6 +28,9 @@ body{
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     line-height:1.5;
+
+    /* Offset for fixed header */
+    padding-top:72px; /* adjust if header height changes */
 }
 
 .container{
@@ -37,6 +40,12 @@ body{
 }
 
 .site-header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1000;
+    background:var(--bg);
     padding-bottom:10px;
 }
 
@@ -94,7 +103,7 @@ body{
     height:auto;
     border-radius:12px;
     display:block;
-    box-shadow: 0 10px 40px rgba(2,6,23,0.6);
+    box-shadow:0 10px 40px rgba(2,6,23,0.6);
     border:1px solid rgba(255,255,255,0.03);
 }
 
@@ -285,3 +294,4 @@ body{
         font-size:28px;
     }
 }
+
