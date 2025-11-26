@@ -19,8 +19,13 @@ This is my portfolio website. It showcases my work, skills, and background in da
 
 ## 📁 Repository Structure  
 / (root folder)
+
 ├── index.html (or main landing page)
+
 ├── css/ (stylesheets)
+
 ├── js/ (scripts)
+
 ├── assets/ (images, icons, etc.)
+
 └── … other folders/files
