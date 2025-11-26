@@ -10,12 +10,12 @@ This is my portfolio website. It showcases my work, skills, and background in da
 - Projects section with links to repositories (or sample projects)  
 - Skills / technologies used section  
 - Contact / social links section  
-- (Optional) Responsive design for desktop and mobile  
+- Responsive design for desktop and mobile  
 
 ## 🛠️ Tech Stack / Tools Used  
-- HTML / CSS / JavaScript (or React / Vue / whichever you used)  
-- (If relevant) Backend / server-side or static site generator — e.g. Node.js, Python, etc.  
-- (If relevant) Data analytics or visualization libraries/ tools  
+- HTML / CSS / JavaScript  
+- Backend / server-side or static site generator  
+- Data analytics or visualization libraries/ tools  
 
 ## 📁 Repository Structure  
 / (root folder)
